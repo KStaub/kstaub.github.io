@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+<ul class="posts">
+
+    {% for project in site.portfolio %}
+      <li><span>{{ project.date | date_to_string }}</span> » <a href="{{ project.url }}" title="{{ project.title }}">{{ project.title }}</a></li>
+    {% endfor %}
+  </ul>
